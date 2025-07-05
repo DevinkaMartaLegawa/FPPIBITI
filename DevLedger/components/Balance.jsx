@@ -1,10 +1,13 @@
 function Balance(props) {
     return (
-        <div>
-            <h2>Saldo Kamu:</h2>
-            <p>Rp {props.amount.toLocaleString()}</p>
-        </div>
-    );
-}
-
-export default Balance;
+      <div>
+        <h3>Saldo Kamu:</h3>
+        <p className={props.amount >= 0 ? "balance-positive" : "balance-negative"}>
+          Rp {props.amount.toLocaleString("id-ID")}
+        </p>
+      </div>
+    )
+  }
+  
+  export default Balance;
+  

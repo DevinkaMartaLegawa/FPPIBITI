@@ -1,11 +1,9 @@
-function Layout(props) {
-    return (
-      <div className="content-wrapper">
-        <h2>Aplikasi Keuangan</h2>
-        {props.children}
-      </div>
-    );
-  }
-  
-  export default Layout;
-  
+function Layout({ children }) {
+  return (
+    <div className="min-h-screen bg-gray-50">
+      {children}
+    </div>
+  );
+}
+
+export default Layout;
